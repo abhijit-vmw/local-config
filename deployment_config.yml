@@ -1,0 +1,73 @@
+---
+bootstrap:
+  server: 192.168.100.9
+  username: root
+  password: root
+
+vsphere:
+  server: 10.202.233.1
+  username: administrator@vsphere.local
+  password: <encoded:QWRtaW4hMjM=>
+  tls_thumbprint: F2:23:10:0F:A0:5E:22:D0:ED:0B:88:DC:3B:CA:E0:CE:29:AA:41:F8
+
+tkg:
+  mgmt:
+    cluster:
+      # must consist of lower case alphanumeric characters, '-' or '.', and must start and end with an alphanumeric character
+      name: arcas-mgmt
+      plan: prod
+
+    deployment:
+      datacenter: '/VMW-wAnywhere-DC'
+      datastore: /VMW-wAnywhere-DC/datastore/local-ssd-a1908
+      folder: /VMW-wAnywhere-DC/vm/Arcas-Lab/Arcas-Pipeline/Management
+      network: arcas-management-pg
+      resource_pool: /VMW-wAnywhere-DC/host/cVMW-wAnywhere-Collab-CLU/Resources
+    ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCxpnSwM91nXUDvJPZjL5FNhEUURfIROVHRXl4192R/p7kDrdwsBQo5uGeM3YoWXB/A9XgiCDeR2vCZGf/r4i1M1Ay10qL5Vfw8McfAEZd7OANDr0zS9TedO85usgNfMh26ddsBNehi1DOKxTyfYVW1qDFCOhF1BnfOF5GNWVq0c/nJ08KjE3JpqWXREY0jbDo+OPYqsl0zpoj+VvvGE9zdfY4g6c5RrzQDKEPSvkngRk8OFA84QRSqE1I0OnA3YRFwpB1n7l3oGxQMQEqkH5RNWHcvzlUrceyLxVG9PPZQVfybSuUajqXkPnEqDRCRA3mTXK30GSj7pOhSGyKjG3ixaCZ+iXmDwWrkM+cvwg2CZlNjshJvnjggqjVhIiZ1yl2bfVllOdOYXJzW64XXBWROJEubyMdHEpKd6k286wv+p4RI75qu3lBqjVMl2pLsWisTzQQFGlXbRr7HFxY9tD+btQEnpE4A+I+PQwrHW8Dy13vhvRU5arEQ2gWUbBGMYQwZbYMHPX1aruG3EhklwI3A+/3Y9Resa7ewWKi7rVngCqG1rJ41SUy/npDLzSwBTNkKO2LYFLPsE0ymSc/37l0SUedLOC3QpI1IUBIuU2yvMqCtpJsKAKV6KbBjgOXmIq1b5m+lUHpNh4uGU/lHK/nz8H0NCulS2YIwxsuOmruDTw==
+    control_plane:
+      endpoint: "192.168.101.20"
+      disk_gib: '20'
+      mem_mib: '4096'
+      cpus: '2'
+    worker:
+      endpoint: ''
+      disk_gib: '20'
+      mem_mib: '4096'
+      cpus: '2'
+avi:
+  vm_name: "arcas-avi"
+  # password: Admin!23
+  password: <encoded:QWRtaW4hMjM=>
+  username: admin
+  # vip network
+  data_network:
+    name: arcas-aviMgmt-pg
+    cidr: 192.168.200.0/24
+  cloud:
+    name: Default-Cloud
+    se_group: 'Default-Group'
+    dc: /VMW-wAnywhere-DC
+    pg: "arcas-aviVip-pg"
+    ipam: "arcas cloud ipam"
+    dns:
+      name: "arcas dns profiles"
+      domain: "arcas.local"
+  deploy:
+    dc: /VMW-wAnywhere-DC
+    cluster: Cluster
+    folder: /VMW-wAnywhere-DC/vm/Arcas-Lab/Arcas-Pipeline/Avi-Controller
+    rp: RP
+    ds: /VMW-wAnywhere-DC/datastore/local-ssd-a1908
+    pg: arcas-aviMgmt-pg
+    parameters:
+      gateway: 192.168.200.253
+      netmask: 255.255.255.0
+      ip: 192.168.200.5
+  conf:
+    dns: [192.168.100.5]
+    ntp: [139.59.55.93, 165.22.213.178]
+    backup:
+      passphrase: VMware123!
+    cert:
+      name: "New Self Signed"
+      common_name: "arcas.local"
