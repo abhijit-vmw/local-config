@@ -66,7 +66,7 @@ avi:
   cloud:
     name: Default-Cloud
     se_group: 'Default-Group'
-    dc: /VMW-wAnywhere-DC
+    dc: VMW-wAnywhere-DC
     pg: "arcas-aviVip-pg"
     ipam: "arcas cloud ipam"
     dns:
@@ -74,7 +74,7 @@ avi:
       domain: "arcas.local"
   deploy:
     dc: /VMW-wAnywhere-DC
-    cluster: Cluster
+    cluster: cVMW-wAnywhere-Collab-CLU
     folder: /VMW-wAnywhere-DC/vm/Arcas-Lab/Arcas-Pipeline/Avi-Controller
     rp: Resources
     ds: /VMW-wAnywhere-DC/datastore/local-ssd-a1908
