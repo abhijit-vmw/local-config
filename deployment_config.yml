@@ -73,7 +73,7 @@ avi:
       name: "arcas dns profiles"
       domain: "arcas.local"
   deploy:
-    dc: /VMW-wAnywhere-DC
+    dc: VMW-wAnywhere-DC
     cluster: cVMW-wAnywhere-Collab-CLU
     folder: /VMW-wAnywhere-DC/vm/Arcas-Lab/Arcas-Pipeline/Avi-Controller
     rp: Resources
