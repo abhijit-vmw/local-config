@@ -76,7 +76,6 @@ avi:
     dc: VMW-wAnywhere-DC
     cluster: cVMW-wAnywhere-Collab-CLU
     folder: /VMW-wAnywhere-DC/vm/Arcas-Lab/Arcas-Pipeline/Avi-Controller
-    rp: Resources
     ds: /VMW-wAnywhere-DC/datastore/local-ssd-a1908
     pg: arcas-aviMgmt-pg
     parameters:
