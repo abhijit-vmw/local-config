@@ -95,10 +95,8 @@ avi:
       name: "New Self Signed"
       common_name: "arcas.local"
       
-dhcp:
-  server:
-    validation: 
-      datacenter: '/VMW-wAnywhere-DC'
-      datastore: VMW-wAnywhere-DC/datastore/local-ssd-a1908
-      folder: /VMW-wAnywhere-DC/vm/Arcas-Lab/Arcas-Pipeline/Avi-Controller
-      resource_pool: /VMW-wAnywhere-DC/host/cVMW-wAnywhere-Collab-CLU/Resources
+dhcp_validation:
+  datacenter: '/VMW-wAnywhere-DC'
+  datastore: VMW-wAnywhere-DC/datastore/local-ssd-a1908
+  folder: /VMW-wAnywhere-DC/vm/Arcas-Lab/Arcas-Pipeline/Avi-Controller
+  resource_pool: /VMW-wAnywhere-DC/host/cVMW-wAnywhere-Collab-CLU/Resources
