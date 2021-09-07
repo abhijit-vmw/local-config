@@ -20,7 +20,7 @@ tkg:
       datastore: /VMW-wAnywhere-DC/datastore/local-ssd-a1908
       folder: /VMW-wAnywhere-DC/vm/Arcas-Lab/Arcas-Pipeline/Management
       network: arcas-management-pg
-      needPortgroupValidation: 'true'
+      need_portgroup_validation: 'true'
       resource_pool: /VMW-wAnywhere-DC/host/cVMW-wAnywhere-Collab-CLU/Resources
     ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCxpnSwM91nXUDvJPZjL5FNhEUURfIROVHRXl4192R/p7kDrdwsBQo5uGeM3YoWXB/A9XgiCDeR2vCZGf/r4i1M1Ay10qL5Vfw8McfAEZd7OANDr0zS9TedO85usgNfMh26ddsBNehi1DOKxTyfYVW1qDFCOhF1BnfOF5GNWVq0c/nJ08KjE3JpqWXREY0jbDo+OPYqsl0zpoj+VvvGE9zdfY4g6c5RrzQDKEPSvkngRk8OFA84QRSqE1I0OnA3YRFwpB1n7l3oGxQMQEqkH5RNWHcvzlUrceyLxVG9PPZQVfybSuUajqXkPnEqDRCRA3mTXK30GSj7pOhSGyKjG3ixaCZ+iXmDwWrkM+cvwg2CZlNjshJvnjggqjVhIiZ1yl2bfVllOdOYXJzW64XXBWROJEubyMdHEpKd6k286wv+p4RI75qu3lBqjVMl2pLsWisTzQQFGlXbRr7HFxY9tD+btQEnpE4A+I+PQwrHW8Dy13vhvRU5arEQ2gWUbBGMYQwZbYMHPX1aruG3EhklwI3A+/3Y9Resa7ewWKi7rVngCqG1rJ41SUy/npDLzSwBTNkKO2LYFLPsE0ymSc/37l0SUedLOC3QpI1IUBIuU2yvMqCtpJsKAKV6KbBjgOXmIq1b5m+lUHpNh4uGU/lHK/nz8H0NCulS2YIwxsuOmruDTw==
     control_plane:
