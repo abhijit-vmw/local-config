@@ -75,13 +75,13 @@ avi:
     dns:
       name: "arcas dns profiles"
       domain: "arcas.local"
-  deploy:
-    dc: VMW-wAnywhere-DC
-    cluster: cVMW-wAnywhere-Collab-CLU
+  deployment:
+    datacenter: VMW-wAnywhere-DC
     folder: /VMW-wAnywhere-DC/vm/Arcas-Lab/Arcas-Pipeline/Avi-Controller
-    rp: arcas-rp
-    ds: /VMW-wAnywhere-DC/datastore/local-ssd-a1908
-    pg: arcas-aviMgmt-pg
+    resource_pool: /VMW-wAnywhere-DC/host/cVMW-wAnywhere-Collab-CLU/Resources
+    datastore: /VMW-wAnywhere-DC/datastore/local-ssd-a1908
+    network: arcas-aviMgmt-pg
+    need_portgroup_validation: 'false'
     parameters:
       gateway: 192.168.200.253
       netmask: 255.255.255.0
