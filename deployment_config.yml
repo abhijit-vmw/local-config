@@ -14,7 +14,7 @@ tkg:
   mgmt:
     cluster:
       name: arcas-mgmt
-      plan: prod
+      plan: dev
     deployment:
       datacenter: /VMW-wAnywhere-DC
       datastore: /VMW-wAnywhere-DC/datastore/local-ssd-a1908
