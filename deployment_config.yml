@@ -105,7 +105,7 @@ avi:
       name: "arcas dns profiles"
       domain: "arcas.local"
   deployment:
-    datacenter: VMW-wAnywhere-DC
+    datacenter: /VMW-wAnywhere-DC
     folder: /VMW-wAnywhere-DC/vm/Arcas-Lab/Arcas-Pipeline/Avi-Controller
     resource_pool: /VMW-wAnywhere-DC/host/cVMW-wAnywhere-Collab-CLU/Resources
     datastore: /VMW-wAnywhere-DC/datastore/local-ssd-a1908
