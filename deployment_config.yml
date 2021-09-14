@@ -22,7 +22,7 @@ tkg:
       network: arcas-management-pg
       need_portgroup_validation: 'true'
       resource_pool: /VMW-wAnywhere-DC/host/cVMW-wAnywhere-Collab-CLU/Resources
-    ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDm1J9oOPcNrIQIp6r7o6rZ28NUFxvQ4MfbVQgMZq+NJVGSfL6gPj+a2IN8UjUVKXYznthbewt49Uo+gHkiXlJDxcymHvt5IEkksVBRyvMGA18ccJdf+A2qyCOusk8a62YbipI8kJlj8ZaJeXv8OC5xT6cf8pR4sxCbw4eyhRpV87za4qRxUUO20uBPQ2HfN3HqFCZsf70yVGUl0X6NQuD4tbm1UX9s+oSNyUPj3ZocZuJFLVfk5GdVr8Ew+Pvcr/C1OEmgBC5PJ1C/xAa3W8UJqmFmeFx2wOLb33JEbdLOm8ZwljoDEKFQBP9jr+XKnRBY2ew1tHi89i0nk3Reh+lcl2V9Rn5N/fcwClm298B85mmt2V7X3pk5Pc7l7JnjG5iIilv8Nv3a2SpHgx8x0Nr5NNH+qPh2UYeICDUTsjBbhHx92Xqgj60BLIdJvEkW3wUwMOjnO0B+HthFH6Y6mTETSTUfLiO1YKj1MB0kMbZOnK9SUqUVFqHf1enrb0shqzEXMCf4ZjzjK80FEkZTaxhUNdlfWjU0PaMXRtEcnhcxxEdC72qTHAteJjw8NLFvAlUp3sgqpE/KWDu/HX9vuJgeeuUdL8uiEXFvFIxqMHiHOCVDT+4V68Pg7dazA9Zx07IYjHxzqlfbKwa3t90E1bYFzFj1VZJdZK+czLB84U10Aw== akangale@vmware.com
+    ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCwg2MOzjL+woGDKZVbUYQ0IWTIn6JIcxDxK1AX2Ox4GOeiIc4DWmbRAhHGl5ATIufJ7M1fODncc8jk0kySL7UIX7KCuzFcf8Iezypv67DtliFUuRorLVXAbwjkjcFj9fcAo4S7CUBLI0XA7RVgXrGWajwBeKP5AVgfVC6/zLxdNzMn4oJyBjBwz3ogD/NCIpYy+81Hy0wgIJPh8CwAKECFSuD+9V/nBJm9zuM1zH3T3hdVI58jGnmdGVEZQUX3opdKTWvPfT2NuXH1cjGXxqjN8k5Prq8996uieuIoF8wQBFwZhFnvUbjpBze2VZyd33fBqyHyAwdyn104nxiq6N8EgRk3KbHFN4xRoZg3QcoSgrixn6OcifcsFLz3mYD1BLFbsVjBZZMQizcXoWSP6VrbjCpWpSXIPYt68zd6kOwQEqYJ/zKCNoHwEXE7Ucxq2ijdqrNCzVW8BqKqkHFpRVyxY3t75vLfPbs97yGrZJKbOSN4Hs5GWH92BEwKu6sF2R/K6na2d2q6pD1WJbh5yYvdQFa8q+gjsjt1oTYa6cOIQ8SZhseCrG1f653nl/ryKGsyRxigP5YNjgDZu9nNWKimRERtUTAaz6b86wd/Uz9xwEYnK+1mw6ODJmCojOLp9h3m6FNHVvfePBK8hTsXFYXVGmccuB5cCfE5luVffAKy1w== akangale@vmware.com
     control_plane:
       endpoint: "192.168.101.20"
       disk_gib: '20'
@@ -44,7 +44,7 @@ tkg:
       network: arcas-sharedService-pg
       need_portgroup_validation: 'false'
       resource_pool: /VMW-wAnywhere-DC/host/cVMW-wAnywhere-Collab-CLU/Resources
-    ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDm1J9oOPcNrIQIp6r7o6rZ28NUFxvQ4MfbVQgMZq+NJVGSfL6gPj+a2IN8UjUVKXYznthbewt49Uo+gHkiXlJDxcymHvt5IEkksVBRyvMGA18ccJdf+A2qyCOusk8a62YbipI8kJlj8ZaJeXv8OC5xT6cf8pR4sxCbw4eyhRpV87za4qRxUUO20uBPQ2HfN3HqFCZsf70yVGUl0X6NQuD4tbm1UX9s+oSNyUPj3ZocZuJFLVfk5GdVr8Ew+Pvcr/C1OEmgBC5PJ1C/xAa3W8UJqmFmeFx2wOLb33JEbdLOm8ZwljoDEKFQBP9jr+XKnRBY2ew1tHi89i0nk3Reh+lcl2V9Rn5N/fcwClm298B85mmt2V7X3pk5Pc7l7JnjG5iIilv8Nv3a2SpHgx8x0Nr5NNH+qPh2UYeICDUTsjBbhHx92Xqgj60BLIdJvEkW3wUwMOjnO0B+HthFH6Y6mTETSTUfLiO1YKj1MB0kMbZOnK9SUqUVFqHf1enrb0shqzEXMCf4ZjzjK80FEkZTaxhUNdlfWjU0PaMXRtEcnhcxxEdC72qTHAteJjw8NLFvAlUp3sgqpE/KWDu/HX9vuJgeeuUdL8uiEXFvFIxqMHiHOCVDT+4V68Pg7dazA9Zx07IYjHxzqlfbKwa3t90E1bYFzFj1VZJdZK+czLB84U10Aw== akangale@vmware.com
+    ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCwg2MOzjL+woGDKZVbUYQ0IWTIn6JIcxDxK1AX2Ox4GOeiIc4DWmbRAhHGl5ATIufJ7M1fODncc8jk0kySL7UIX7KCuzFcf8Iezypv67DtliFUuRorLVXAbwjkjcFj9fcAo4S7CUBLI0XA7RVgXrGWajwBeKP5AVgfVC6/zLxdNzMn4oJyBjBwz3ogD/NCIpYy+81Hy0wgIJPh8CwAKECFSuD+9V/nBJm9zuM1zH3T3hdVI58jGnmdGVEZQUX3opdKTWvPfT2NuXH1cjGXxqjN8k5Prq8996uieuIoF8wQBFwZhFnvUbjpBze2VZyd33fBqyHyAwdyn104nxiq6N8EgRk3KbHFN4xRoZg3QcoSgrixn6OcifcsFLz3mYD1BLFbsVjBZZMQizcXoWSP6VrbjCpWpSXIPYt68zd6kOwQEqYJ/zKCNoHwEXE7Ucxq2ijdqrNCzVW8BqKqkHFpRVyxY3t75vLfPbs97yGrZJKbOSN4Hs5GWH92BEwKu6sF2R/K6na2d2q6pD1WJbh5yYvdQFa8q+gjsjt1oTYa6cOIQ8SZhseCrG1f653nl/ryKGsyRxigP5YNjgDZu9nNWKimRERtUTAaz6b86wd/Uz9xwEYnK+1mw6ODJmCojOLp9h3m6FNHVvfePBK8hTsXFYXVGmccuB5cCfE5luVffAKy1w== akangale@vmware.com
     control_plane:
       endpoint: "192.168.102.20"
       disk_gib: '20'
@@ -55,6 +55,13 @@ tkg:
       disk_gib: '20'
       mem_mib: '4096'
       cpus: '2'
+    extensions_spec:
+      harbor:
+        adminPassword: Admin!23Admin!23
+        hostname: harbor.arcas.lab
+        storage:
+          datastore: /VMW-wAnywhere-DC/datastore/local-ssd-a1908
+          name: tkgPolicy
   workload_clusters:
     - cluster:
         name: arcas-workload
@@ -66,7 +73,7 @@ tkg:
         network: arcas-workload-pg
         need_portgroup_validation: 'false'
         resource_pool: /VMW-wAnywhere-DC/host/cVMW-wAnywhere-Collab-CLU/Resources
-      ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDm1J9oOPcNrIQIp6r7o6rZ28NUFxvQ4MfbVQgMZq+NJVGSfL6gPj+a2IN8UjUVKXYznthbewt49Uo+gHkiXlJDxcymHvt5IEkksVBRyvMGA18ccJdf+A2qyCOusk8a62YbipI8kJlj8ZaJeXv8OC5xT6cf8pR4sxCbw4eyhRpV87za4qRxUUO20uBPQ2HfN3HqFCZsf70yVGUl0X6NQuD4tbm1UX9s+oSNyUPj3ZocZuJFLVfk5GdVr8Ew+Pvcr/C1OEmgBC5PJ1C/xAa3W8UJqmFmeFx2wOLb33JEbdLOm8ZwljoDEKFQBP9jr+XKnRBY2ew1tHi89i0nk3Reh+lcl2V9Rn5N/fcwClm298B85mmt2V7X3pk5Pc7l7JnjG5iIilv8Nv3a2SpHgx8x0Nr5NNH+qPh2UYeICDUTsjBbhHx92Xqgj60BLIdJvEkW3wUwMOjnO0B+HthFH6Y6mTETSTUfLiO1YKj1MB0kMbZOnK9SUqUVFqHf1enrb0shqzEXMCf4ZjzjK80FEkZTaxhUNdlfWjU0PaMXRtEcnhcxxEdC72qTHAteJjw8NLFvAlUp3sgqpE/KWDu/HX9vuJgeeuUdL8uiEXFvFIxqMHiHOCVDT+4V68Pg7dazA9Zx07IYjHxzqlfbKwa3t90E1bYFzFj1VZJdZK+czLB84U10Aw== akangale@vmware.com
+      ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCwg2MOzjL+woGDKZVbUYQ0IWTIn6JIcxDxK1AX2Ox4GOeiIc4DWmbRAhHGl5ATIufJ7M1fODncc8jk0kySL7UIX7KCuzFcf8Iezypv67DtliFUuRorLVXAbwjkjcFj9fcAo4S7CUBLI0XA7RVgXrGWajwBeKP5AVgfVC6/zLxdNzMn4oJyBjBwz3ogD/NCIpYy+81Hy0wgIJPh8CwAKECFSuD+9V/nBJm9zuM1zH3T3hdVI58jGnmdGVEZQUX3opdKTWvPfT2NuXH1cjGXxqjN8k5Prq8996uieuIoF8wQBFwZhFnvUbjpBze2VZyd33fBqyHyAwdyn104nxiq6N8EgRk3KbHFN4xRoZg3QcoSgrixn6OcifcsFLz3mYD1BLFbsVjBZZMQizcXoWSP6VrbjCpWpSXIPYt68zd6kOwQEqYJ/zKCNoHwEXE7Ucxq2ijdqrNCzVW8BqKqkHFpRVyxY3t75vLfPbs97yGrZJKbOSN4Hs5GWH92BEwKu6sF2R/K6na2d2q6pD1WJbh5yYvdQFa8q+gjsjt1oTYa6cOIQ8SZhseCrG1f653nl/ryKGsyRxigP5YNjgDZu9nNWKimRERtUTAaz6b86wd/Uz9xwEYnK+1mw6ODJmCojOLp9h3m6FNHVvfePBK8hTsXFYXVGmccuB5cCfE5luVffAKy1w== akangale@vmware.com
       control_plane:
         endpoint: "192.168.110.32"
         disk_gib: '20'
