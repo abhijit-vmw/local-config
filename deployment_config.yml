@@ -29,7 +29,7 @@ tkg:
       mem_mib: '4096'
       cpus: '2'
     worker:
-      endpoint: ''
+      endpoint:
       disk_gib: '20'
       mem_mib: '4096'
       cpus: '2'
@@ -51,7 +51,7 @@ tkg:
       mem_mib: '4096'
       cpus: '2'
     worker:
-      endpoint: ''
+      endpoint:
       disk_gib: '20'
       mem_mib: '4096'
       cpus: '2'
@@ -80,7 +80,7 @@ tkg:
         mem_mib: '4096'
         cpus: '2'
       worker:
-        endpoint: ''
+        endpoint:
         disk_gib: '20'
         mem_mib: '4096'
         cpus: '2'
