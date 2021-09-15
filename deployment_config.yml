@@ -84,6 +84,9 @@ tkg:
         disk_gib: '20'
         mem_mib: '4096'
         cpus: '2'
+      extensions_spec:
+        grafana:
+          adminPassword: Admin!23
 
 avi:
   vm_name: "arcas-avi"
