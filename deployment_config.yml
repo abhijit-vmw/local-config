@@ -1,6 +1,6 @@
 ---
 bootstrap:
-  server: 192.168.100.44
+  server: 192.168.100.9
   username: root
   password: root
 
